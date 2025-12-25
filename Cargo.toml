@@ -4,5 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-apalis-postgres = "1.0.0-beta.2"
-sqlx = { version = "0.8.6", features = ["time", "chrono"] }
+db = { path = "crates/db" }
+worker = { path = "crates/worker" }
+
+[workspace]
+resolver = "3"
+members = ["crates/*"]
