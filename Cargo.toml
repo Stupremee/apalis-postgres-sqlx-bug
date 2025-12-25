@@ -1,0 +1,8 @@
+[package]
+name = "apalis-sqlx-bug"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+apalis-postgres = "1.0.0-beta.2"
+sqlx = { version = "0.8.6", features = ["time", "chrono"] }
